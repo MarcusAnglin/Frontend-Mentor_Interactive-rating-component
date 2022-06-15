@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- displays site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- normalize.css -->
+    <link rel="stylesheet" href="./normalize.css" />
+    <!-- site styles -->
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <article class="content-container view">
+        <div class="icon-container">
+          <img src="./images/icon-star.svg" alt="icon-star" class="star-icon" />
+        </div>
+        <h2>How did we do?</h2>
+        <p>
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <div class="rating-container">
+          <div class="icon-container" data-rating="1">
+            <span class="number-rating">1</span>
+          </div>
+          <div class="icon-container" data-rating="2">
+            <span class="number-rating">2</span>
+          </div>
+          <div class="icon-container" data-rating="3">
+            <span class="number-rating">3</span>
+          </div>
+          <div class="icon-container" data-rating="4">
+            <span class="number-rating">4</span>
+          </div>
+          <div class="icon-container" data-rating="5">
+            <span class="number-rating">5</span>
+          </div>
+        </div>
+        <button type="button" class="submit-btn">submit</button>
+      </article>
+      <article class="content-container thank-you-container">
+        <img src="./images/illustration-thank-you.svg" alt="icon-star" />
+
+        <p class="selected-rating">you selected # out of 5</p>
+        <h2>Thank you!</h2>
+        <p>
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </article>
+    </main>
+  </body>
+</html>
