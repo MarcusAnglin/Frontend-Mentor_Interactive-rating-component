@@ -45,7 +45,7 @@ Users should be able to:
 ## Author
 
 - Website - [Marcus A](https://github.com/MarcusAnglin)
-- Frontend Mentor - [@yMarcusAnglin](https://www.frontendmentor.io/profile/MarcusAnglin)
+- Frontend Mentor - [@MarcusAnglin](https://www.frontendmentor.io/profile/MarcusAnglin)
 
 ## Acknowledgments
 
