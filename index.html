@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- normalize.css -->
-    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./style/normalize.css" />
     <!-- site styles -->
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./style/style.css" />
     <link
       rel="icon"
       type="image/png"
@@ -24,20 +24,10 @@
     />
 
     <title>Frontend Mentor | Interactive rating component</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
     <main>
+      <!-- prompt container -->
       <article class="content-container view prompt-container">
         <div class="icon-container">
           <img src="./images/icon-star.svg" alt="icon-star" class="star-icon" />
@@ -66,6 +56,8 @@
         </div>
         <button type="button" class="submit-btn">submit</button>
       </article>
+
+      <!-- thank you container -->
       <article class="content-container thank-you-container">
         <img src="./images/illustration-thank-you.svg" alt="icon-star" />
 
@@ -78,6 +70,7 @@
       </article>
     </main>
 
+    <!-- scripts -->
     <script src="sctipts/index.js"></script>
   </body>
 </html>
