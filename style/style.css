@@ -1,88 +1,85 @@
 
 :root {
+    
     /* Primary Colors */
-    --clr-orange:hsl(25, 97%, 53%);
-
+    --clr-orange: #fc7613;
+    
     /* Neutral Colors */
-    --clr-white:hsl(0, 0%, 100%);
-    --light-grey: hsl(217, 12%, 63%) ;
-    --medium-grey: hsl(216, 12%, 54%) ;
+    --clr-white: hsl(0, 0%, 100%);
+    
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    
     --dark-blue: hsl(213, 19%, 18%) ;
     --very-dark-blue: hsl(216, 12%, 8%);
-
+    
+    /* some given colors seemed VERY off from the design so I added this one */
+    --medium-dark-blue: #2c363f;
+    
     /* fonts */
     font-family: 'Overpass', sans-serif;
 }
 
-html,body {
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
     height: 100%;
+    background-color: var(--very-dark-blue);
 }
 
 main {
     display: flex;
+    flex-wrap: wrap;
     place-content: center;
-    height: 100%;
-    align-self: center;
-    background-color: var(--very-dark-blue);
+    height: 100vh;
 }
 
-.content-container {
+
+/* GENERAL STYLES */
+
+.card-container {
     display: none;
-    background-color:  var(--dark-blue);
-    width: 375px;
+    background-color: var(--dark-blue);
+    max-width: 80vw;
     border-radius: 2rem;
-    margin: auto 1rem;
-    padding: 1.5rem;
+    padding: 1.75rem;
     color: var(--light-grey);
     line-height: 1.5;
 }
 
-.icon-container {
-    position: relative;
-    background-color: var(--medium-grey);
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+.card-container h2 {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
     color: var(--clr-white);
 }
 
-.star-icon, .number-rating {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.card-container p {
+    font-size: .9rem;
 }
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--medium-dark-blue);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    color: var(--medium-grey);
+}
+
+/* PROMPT CARD */
 
 .rating-container {
     display: flex;
+    list-style: none;
     justify-content: space-between;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-}
-
- h2 {
-    margin-top: 1.5rem;
-    margin-bottom: 0;
-    color: var(--clr-white);
- 
-}
-
-.submit-btn {
-    color: var(--clr-white);
-    background-color: var(--clr-orange);
-    border-color: transparent;   
-    font-weight: 700;
-    width: 100%;
-    padding: 1rem 0;
-    font-size: 1.25rem;
-    border-radius: 2rem;
-    text-transform: uppercase;
-    letter-spacing: .25rem;
-}
-
-.submit-btn:hover {
-    background-color: var(--clr-white);
-    color: var(--clr-orange);
+    margin-top: 1.6rem;
+    margin-bottom: 1.6rem;
 }
 
 .rating-container .icon-container:hover {
@@ -90,8 +87,8 @@ main {
     color: var(--dark-blue);
 }
 
-.thank-you-container {
-    text-align: center;
+.active-rating {
+    background-color: var(--clr-orange);
 }
 
 .selected-rating {
@@ -103,10 +100,40 @@ main {
     border-radius: 1.5rem;
 }
 
+.submit-btn {
+    background-color: var(--clr-orange);
+    color: var(--clr-white);
+    border-color: transparent;   
+    font-weight: 700;
+    width: 100%;
+    padding: .5rem 0;
+    font-size: 1rem;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .25rem;
+}
+
+.submit-btn:hover {
+    background-color: var(--clr-white);
+    color: var(--clr-orange);
+}
+
+/* THANK YOU CARD */
+
+.thank-you-container {
+    text-align: center;
+}
+
+
+/* STATES */
+ 
 .view {
     display: initial;
 }
 
-.active-rating {
-    background-color: var(--clr-orange);
+/* MEDIA QUERY */
+@media screen and (min-width: 375px) {
+    .card-container {
+        max-width: 375px;
+    }
 }

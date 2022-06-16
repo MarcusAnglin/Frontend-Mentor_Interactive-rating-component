@@ -50,3 +50,7 @@ Users should be able to:
 ## Acknowledgments
 
 Even a simple project like this can be a huge undertaking for someone who's just starting their coding journey or has only coded along to tutorials, but projects like this are a great way to build confidence and experience. I'm grateful to Frontend Mentor for hosting these projects. and [John Smilga](https://www.johnsmilga.com/) for having great tutorial content available for people like me to learn from.
+
+### second pass
+
+After looking at other solutions I took a second look at my own and realized I made decisions that were over complicated. One decision I saw that still has me conflicted is the fact that this is essentially a styled form, I choose not to implement this but I'm not sure if that's the correct decision. The javascript functionality I implemented using the dataset property basically ends up mimicking a form.
