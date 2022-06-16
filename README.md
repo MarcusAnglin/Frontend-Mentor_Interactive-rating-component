@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/MarcusAnglin/Frontend-Mentor_Interactive-rating-component)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [(you are here)](https://github.com/MarcusAnglin/Frontend-Mentor_Interactive-rating-component)
+- Live Site URL: [live site here](https://marcusanglin.github.io/Frontend-Mentor_Interactive-rating-component/)
 
 ## My process
 
