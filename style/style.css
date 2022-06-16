@@ -1,5 +1,10 @@
 
 :root {
+    /* fonts */
+    font-family: 'Overpass', sans-serif;
+    
+    
+    /* VARIABLES */
     
     /* Primary Colors */
     --clr-orange: #fc7613;
@@ -16,8 +21,8 @@
     /* some given colors seemed VERY off from the design so I added this one */
     --medium-dark-blue: #2c363f;
     
-    /* fonts */
-    font-family: 'Overpass', sans-serif;
+    /* misc */
+    --transition: 0.3s ease-in-out all
 }
 
 *{
@@ -26,12 +31,8 @@
     padding: 0;
 }
 
-body {
-    height: 100%;
-    background-color: var(--very-dark-blue);
-}
-
 main {
+    background-color: var(--very-dark-blue);
     display: flex;
     flex-wrap: wrap;
     place-content: center;
@@ -70,6 +71,7 @@ main {
     height: 45px;
     border-radius: 50%;
     color: var(--medium-grey);
+    transition: var(--transition);
 }
 
 /* PROMPT CARD */
@@ -83,21 +85,13 @@ main {
 }
 
 .rating-container .icon-container:hover {
+    cursor: pointer;
     background-color: var(--light-grey);
     color: var(--dark-blue);
 }
 
-.active-rating {
+.active-rating{
     background-color: var(--clr-orange);
-}
-
-.selected-rating {
-    color: var(--clr-orange);
-    background-color: var(--medium-grey);
-    width: fit-content;
-    margin: 1.4rem auto 0;
-    padding: .5rem 1rem;
-    border-radius: 1.5rem;
 }
 
 .submit-btn {
@@ -111,6 +105,8 @@ main {
     border-radius: 2rem;
     text-transform: uppercase;
     letter-spacing: .25rem;
+    cursor: pointer;
+    transition: var(--transition);
 }
 
 .submit-btn:hover {
@@ -120,13 +116,21 @@ main {
 
 /* THANK YOU CARD */
 
+.selected-rating{
+    color: var(--clr-orange);
+    background-color: var(--medium-grey);
+    width: fit-content;
+    margin: 1.4rem auto 0;
+    padding: .5rem 1rem;
+    border-radius: 1.5rem;
+}
+
 .thank-you-container {
     text-align: center;
 }
 
-
 /* STATES */
- 
+
 .view {
     display: initial;
 }
